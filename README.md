@@ -58,6 +58,6 @@ Your readme will have various images and gifs on it. Upload a test image and tes
 ### Test Link
  [Link to raspberry-pi temp](raspberry-pi/temp.py)
 ### Test Image
-![Picture Name Here](images/EmberEffectMadeByMe.jfif)  
+![Spicy Sticker](images/spicyStickerImage.jpg)  
 ### Test GIF
-![Picture Name Here](images/spicyStickerImage.jpg)  
+![Bread Fall Gif](images/falling-bread-bread.gif)  
