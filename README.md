@@ -56,7 +56,8 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 Your readme will have various images and gifs on it. Upload a test image and test gif to make sure you've got the process figured out. Pick whatever image and gif you want!
 
 ### Test Link
-
+ [Link to raspberry-pi temp](raspberry-pi/temp.py)
 ### Test Image
-
+![Picture Name Here](images/EmberEffectMadeByMe.jfif)  
 ### Test GIF
+![Picture Name Here](images/spicyStickerImage.jpg)  
