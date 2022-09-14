@@ -1,0 +1,13 @@
+import board # type: ignore
+import digitalio  # type: ignore
+import time
+
+countDownNumber = 10 # this is how long the countdown should last, in seconds.
+countDownMessage = "Lift off in: "
+
+while countDownNumber > 0: 
+    print(countDownMessage + str(countDownNumber)) # this combines strings to say the countdown
+    time.sleep(0.5)
+    countDownNumber = countDownNumber - 1
+    time.sleep(0.5)
+print("Lift off!")
