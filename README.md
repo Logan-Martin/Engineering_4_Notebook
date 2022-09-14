@@ -6,24 +6,19 @@
 * [Raspberry_Pi_Assignment_Template](#Raspberry_Pi_Assignment_Template)
 * [Onshape_Assignment_Template](#Onshape_Assignment_Template)
 
+
 &nbsp;
-
-
 ## Launch Pad Part 1 (Countdown)
-
-Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
+#### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
 
 https://user-images.githubusercontent.com/71342159/190177536-60bced6a-d8a5-4760-97a8-236c39c09282.mp4
 
 <img src="https://user-images.githubusercontent.com/71342159/190178442-9cae21a9-acf5-4c73-b093-4f1111e26082.jpg"  width="300" height="400" />
 
-### Code
-Give me a link to your code. [Something like this](https://github.com/millerm22/Engineering_4_Notebook/blob/main/Raspberry_Pi/hello_world.py). Don't make me hunt through your folders, give me a nice link to click to take me there! Remember to **COMMENT YOUR CODE** if you want full credit. 
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/LaunchpadCodeFolder/Launchpad1Code)
 
-### Reflection
-
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
+#### Reflection:
+In the begining, I had basically no idea what I was doing and tried doing everything on the first launch pad assignment. Wiring was kind of an issue, but google exists along with the stuff provided in the assignment so everything was fine. To throw a lesson out there, check out strings and concatenating. "Countdown: 10" is a ton nicer than "10". 
 &nbsp;
 
 
