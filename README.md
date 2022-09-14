@@ -22,6 +22,21 @@ In the begining, I had basically no idea what I was doing and tried doing everyt
 &nbsp;
 
 
+&nbsp;
+## Launch Pad Part 2 (Lights)
+#### Assignment: Blink a red light each second of the countdown, and turn on a green LED to signify liftoff.
+
+https://user-images.githubusercontent.com/71342159/190190369-0d09ca60-f6df-4a7c-9193-2970ff83d496.mp4
+
+<img src="https://user-images.githubusercontent.com/71342159/190178442-9cae21a9-acf5-4c73-b093-4f1111e26082.jpg"  width="300" height="400" />
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/LaunchpadCodeFolder/Launchpad2Code)
+
+#### Reflection:
+!not done!
+&nbsp;
+
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
