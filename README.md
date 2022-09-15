@@ -56,6 +56,20 @@ button1.pull = digitalio.Pull.DOWN
 &nbsp;
 
 
+&nbsp;
+## Launch Pad Part 4 (Servo)
+#### Assignment: Actuate a 180 degree servo on liftoff to simulate the launch tower disconnecting.
+
+ADD VIDEO HERE
+
+ADD IMAGE OF WIRING HERE
+
+ADD LINK TO CODE HERE
+
+#### Reflection:
+REFLECTION GO HERE
+&nbsp;
+
 
 ## Onshape_Assignment_Template
 
