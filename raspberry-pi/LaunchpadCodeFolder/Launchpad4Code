@@ -21,12 +21,11 @@ button1 = digitalio.DigitalInOut(board.GP18) # Button frame work stuff
 button1.direction = digitalio.Direction.INPUT
 button1.pull = digitalio.Pull.DOWN
 
-
-
 countDownNumber = 10 # this is how long the countdown should last, in seconds.
 countDownMessage = "Lift off in: "
 
 countdownHasBegun = False
+servo1.angle = 0
 
 while True:
     if button1.value == True and countdownHasBegun == False: # IF the button is pressed and the coundown hasn't started already, begin the countdown.
@@ -42,6 +41,3 @@ while True:
         print("Lift off!")
         greenLED.value = True
         servo1.angle = 180
-
-
-
