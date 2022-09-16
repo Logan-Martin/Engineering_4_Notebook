@@ -60,14 +60,14 @@ button1.pull = digitalio.Pull.DOWN
 ## Launch Pad Part 4 (Servo)
 #### Assignment: Actuate a 180 degree servo on liftoff to simulate the launch tower disconnecting.
 
-ADD VIDEO HERE
+https://user-images.githubusercontent.com/71342159/190658767-93088c80-a5eb-4f8d-89ba-7f146ba9d465.mp4
 
-ADD IMAGE OF WIRING HERE
+![IMG_20220916_100952903_HDR](https://user-images.githubusercontent.com/71342159/190659024-2af2c910-b1e3-4ac4-9c8a-8e744739f728.jpg)
 
-ADD LINK TO CODE HERE
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/LaunchpadCodeFolder/Launchpad4Code)
 
 #### Reflection:
-REFLECTION GO HERE
+Make sure you have everything wired up correctly with the servo, pretty easy to follow as there were instructions. Oh, I guess also make sure you grab the correct servo.
 &nbsp;
 
 
