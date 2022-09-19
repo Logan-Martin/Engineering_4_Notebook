@@ -71,6 +71,21 @@ Make sure you have everything wired up correctly with the servo, pretty easy to 
 &nbsp;
 
 
+&nbsp;
+## Crash Avoidance Part 1 (Accelerometer)
+#### Assignment: The module must have an accelerometer that continuously reports x, y, and z acceleration values on the serial monitor.
+
+VIDEO HERE
+
+IMAGE OF WIRING HERE
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/LaunchpadCodeFolder/Launchpad4Code)
+
+#### Reflection:
+REFLECTION HERE
+&nbsp;
+
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
