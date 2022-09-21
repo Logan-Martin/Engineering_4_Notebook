@@ -1,9 +1,17 @@
 # Engineering_4_Notebook
 
+Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.com/71342159/191526709-554a300b-c6ea-4e51-8146-2c8ec1623cf6.png), located at the top left, for navigation of different assignments.
+
+
 &nbsp;
-## Table of Contents
-* [Raspberry_Pi_Assignment_Template](#Raspberry_Pi_Assignment_Template)
-* [Onshape_Assignment_Template](#Onshape_Assignment_Template)
+## Random Stuff:
+### Test Link
+ [Link to raspberry-pi temp](raspberry-pi)
+### Test Image
+![Spicy Sticker](images/spicyStickerImage.jpg)  
+### Test GIF
+![Bread Fall Gif](images/falling-bread-bread.gif)
+&nbsp;
 
 
 &nbsp;
@@ -86,33 +94,37 @@ Pretty easy to follow, the printing thing was new, using fstring. I added the st
 &nbsp;
 
 
-## Onshape_Assignment_Template
+&nbsp;
+## Crash Avoidance Part 2 (Light + Powerboost)
+#### Assignment:
+1. The module must have an accelerometer that continuously reports x, y, and z acceleration values.
+2. The module must have an LED that turns on if the helicopter is tilted to 90 degrees. 
+3. The module must be powered by a mobile power source. 
 
-### Assignment Description
+https://user-images.githubusercontent.com/71342159/191521487-4403ba4e-216d-41b9-87df-05f9b2d2ea82.mp4
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+<img src="https://user-images.githubusercontent.com/71342159/191522539-00bb30d9-dbcf-44cd-ae14-5ce34372ff9b.jpg"  width="300" height="400" />
 
-### Part Link 
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Assignments/Crash%20Avoidance%20Part%202%20Code)
 
-[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+#### Reflection:
+Make sure you do CTRL+S to save code, make sure the battery is charged, and that your wiring is all good. I'd say the hardest thing about this for me was just dealing with VS code, well, it was really my fault not VS code' but yeah.
+&nbsp;
 
-### Part Image
+&nbsp;
+## Crash Avoidance Part 3 (OLED Screen)
+#### Assignment:
+The module must have an onboard screen that prints x, y, and z angular velocity values (rad/s) rounded to 3 decimal places.
 
-Take a nice screenshot of your Onshape document. 
+VIDEO HERE 
 
-### Reflection
+IMAGE OF WIRING HERE
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Assignments/Crash%20Avoidance%20Part%202%20Code)
+
+#### Reflection:
 
 &nbsp;
 
-## Media Test
 
-Your readme will have various images and gifs on it. Upload a test image and test gif to make sure you've got the process figured out. Pick whatever image and gif you want!
 
-### Test Link
- [Link to raspberry-pi temp](raspberry-pi)
-### Test Image
-![Spicy Sticker](images/spicyStickerImage.jpg)  
-### Test GIF
-![Bread Fall Gif](images/falling-bread-bread.gif)  
