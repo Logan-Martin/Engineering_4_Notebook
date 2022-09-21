@@ -71,6 +71,21 @@ Make sure you have everything wired up correctly with the servo, pretty easy to 
 &nbsp;
 
 
+&nbsp;
+## Crash Avoidance Part 1 (Accelerometer)
+#### Assignment: The module must have an accelerometer that continuously reports x, y, and z acceleration values on the serial monitor.
+
+https://user-images.githubusercontent.com/71342159/191042721-9f2a09b5-b735-4e9e-8864-6b65203d9a9d.mp4
+
+<img src="https://user-images.githubusercontent.com/71342159/191043382-f2dac862-3abe-4dce-ae4c-f1a0b51c2f36.jpg"  width="300" height="400" />
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Part%201%20Code)
+
+#### Reflection:
+Pretty easy to follow, the printing thing was new, using fstring. I added the strings together to make sense of the info given in the prints. Gyro & Acceleration. 
+&nbsp;
+
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
