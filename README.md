@@ -1,5 +1,7 @@
 # Engineering_4_Notebook
 
+Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.com/71342159/191526709-554a300b-c6ea-4e51-8146-2c8ec1623cf6.png), located at the top left, for navigation of different assignments.
+
 &nbsp;
 ## Launch Pad Part 1 (Countdown)
 #### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
