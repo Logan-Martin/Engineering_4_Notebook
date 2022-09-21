@@ -1,15 +1,6 @@
 # Engineering_4_Notebook
 
 &nbsp;
-## Table of Contents
-* [Launch Pad Part 1](##Launch_Pad_Part_1_(Countdown))
-* [Launch Pad Part 2](##Launch_Pad_Part_2_(Lights))
-* [Launch Pad Part 3](##Launch_Pad_Part_3_(Button))
-* [Launch Pad Part 4](##Launch_Pad_Part_4_(Servo))
-
-
-
-&nbsp;
 ## Launch Pad Part 1 (Countdown)
 #### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
 
