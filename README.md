@@ -2,12 +2,11 @@
 
 &nbsp;
 ## Table of Contents
-* [Raspberry_Pi_Assignment_Template](#Raspberry_Pi_Assignment_Template)
-* [Onshape_Assignment_Template](#Onshape_Assignment_Template)
+* [Launch Pad Part 1](#Launch_Pad_Part_1)
 
 
 &nbsp;
-## Launch Pad Part 1 (Countdown)
+## Launch Pad Part 1
 #### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
 
 https://user-images.githubusercontent.com/71342159/190177536-60bced6a-d8a5-4760-97a8-236c39c09282.mp4
