@@ -2,11 +2,15 @@
 
 &nbsp;
 ## Table of Contents
-* [Launch Pad Part 1](#Launch_Pad_Part_1)
+* [Launch Pad Part 1](#Launch_Pad_Part_1_(Countdown))
+* [Launch Pad Part 2](#Launch_Pad_Part_2_(Lights))
+* [Launch Pad Part 3](#Launch_Pad_Part_3_(Button))
+* [Launch Pad Part 4](#Launch_Pad_Part_4_(Servo))
+
 
 
 &nbsp;
-## Launch Pad Part 1
+## Launch Pad Part 1 (Countdown)
 #### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
 
 https://user-images.githubusercontent.com/71342159/190177536-60bced6a-d8a5-4760-97a8-236c39c09282.mp4
