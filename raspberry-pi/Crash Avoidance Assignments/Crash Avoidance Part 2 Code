@@ -26,6 +26,10 @@ GyroMessage = "Gyro: "
 
 while True:
     time.sleep(0.1)
+    print(str(mpu.acceleration))
     if mpu.acceleration[0] >= 9.5 and mpu.acceleration[0] <= 10.5:
         print("Tilted 90 degrees.")
-        print(str(mpu.acceleration[0]))
+        redLED.value = True
+    else:
+        redLED.value = False
+        
