@@ -2,6 +2,18 @@
 
 Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.com/71342159/191526709-554a300b-c6ea-4e51-8146-2c8ec1623cf6.png), located at the top left, for navigation of different assignments.
 
+
+&nbsp;
+## Random Stuff:
+### Test Link
+ [Link to raspberry-pi temp](raspberry-pi)
+### Test Image
+![Spicy Sticker](images/spicyStickerImage.jpg)  
+### Test GIF
+![Bread Fall Gif](images/falling-bread-bread.gif)
+&nbsp;
+
+
 &nbsp;
 ## Launch Pad Part 1 (Countdown)
 #### Assignment: Countdown from 10 seconds to 0 (liftoff). Print that countdown to the serial monitor.
@@ -99,9 +111,20 @@ https://user-images.githubusercontent.com/71342159/191521487-4403ba4e-216d-41b9-
 Make sure you do CTRL+S to save code, make sure the battery is charged, and that your wiring is all good. I'd say the hardest thing about this for me was just dealing with VS code, well, it was really my fault not VS code' but yeah.
 &nbsp;
 
-### Test Link
- [Link to raspberry-pi temp](raspberry-pi)
-### Test Image
-![Spicy Sticker](images/spicyStickerImage.jpg)  
-### Test GIF
-![Bread Fall Gif](images/falling-bread-bread.gif)  
+&nbsp;
+## Crash Avoidance Part 3 (OLED Screen)
+#### Assignment:
+The module must have an onboard screen that prints x, y, and z angular velocity values (rad/s) rounded to 3 decimal places.
+
+VIDEO HERE 
+
+IMAGE OF WIRING HERE
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Assignments/Crash%20Avoidance%20Part%202%20Code)
+
+#### Reflection:
+
+&nbsp;
+
+
+
