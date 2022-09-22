@@ -21,7 +21,6 @@ mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68)
 
 AccelerationMessage = "Acceleration: "
 GyroMessage = "Gyro: "
-
 # Pico, ['0x68']. 
 # OLED Screen, ['0x3d'].
 
@@ -29,11 +28,28 @@ GyroMessage = "Gyro: "
 # Y = mpu.acceleration[1]
 # Z = mpu.acceleration[2]
 
+# create the display group
+splash = displayio.Group()
+
+# add title block to display group
+title = "ANGULAR VELOCITY"
+# the order of this command is (font, text, text color, and location)
+text_area = label.Label(terminalio.FONT, text=title, color=0xFFFF00, x=5, y=5)
+splash.append(text_area)    
+
+# you will write more code here that prints the x, y, and z angular velocity values to the screen below the title. Use f strings!
+# Don't forget to round the angular velocity values to three decimal places
+
+# send display group to screen
+display.show(splash)
+
+
 led = digitalio.DigitalInOut(board.LED) # on board LED
 led.direction = digitalio.Direction.OUTPUT
 
 redLED = digitalio.DigitalInOut(board.GP16)
 redLED.direction = digitalio.Direction.OUTPUT
+
 
 
 while True:
