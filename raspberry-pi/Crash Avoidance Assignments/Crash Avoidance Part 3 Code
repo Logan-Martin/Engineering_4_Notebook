@@ -57,7 +57,7 @@ while True:
 
     display.show(splash) # send display group to screen, need this.
 
-    if abs(mpu.acceleration[0]) >= 9.5 and abs(mpu.acceleration[0]) <= 10.5 or abs(mpu.acceleration[1]) >= 9.5 and abs(mpu.acceleration[1]) <= 10.5: # this check values, if they are 90 or -90, then a led will turn on.
+    if abs(mpu.acceleration[0]) >= 9.35 and abs(mpu.acceleration[0]) <= 10.35 or abs(mpu.acceleration[1]) >= 9.35 and abs(mpu.acceleration[1]) <= 10.35: # this check values, if they are 90 or -90, then a led will turn on.
         print("Tilted 90 degrees.")
         redLED.value = True
     else:
