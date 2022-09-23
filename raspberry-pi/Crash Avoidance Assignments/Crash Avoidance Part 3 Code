@@ -47,7 +47,7 @@ while True:
     textStringForAccelerationValueZ = "Z:" + str(round(mpu.acceleration[2], 3))
 
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
-    splash.append(text_area) # have this after 
+    splash.append(text_area) # have this after line above, need it for it to work.
     text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueX, color=0xFFFF00, x=5, y=15) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
     text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueY, color=0xFFFF00, x=5, y=25) # the order of this command is (font, text, text color, and location)
@@ -55,9 +55,9 @@ while True:
     text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueZ, color=0xFFFF00, x=5, y=35) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)  
 
-    display.show(splash) # send display group to screen
+    display.show(splash) # send display group to screen, need this.
 
-    if mpu.acceleration[0] >= 9.5 and mpu.acceleration[0] <= 10.5 or mpu.acceleration[1] >= 9.5 and mpu.acceleration[1] <= 10.5:
+    if abs(mpu.acceleration[0]) >= 9.5 and abs(mpu.acceleration[0]) <= 10.5 or abs(mpu.acceleration[1]) >= 9.5 and abs(mpu.acceleration[1]) <= 10.5: # this check values, if they are 90 or -90, then a led will turn on.
         print("Tilted 90 degrees.")
         redLED.value = True
     else:
