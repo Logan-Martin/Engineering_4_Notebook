@@ -41,25 +41,20 @@ while True:
 
     splash = displayio.Group() # create the display group
 
-    toptitle = "ANGULAR VELOCITY"
-    textStringForAccelerationValueX = "X:" + str(round(mpu.acceleration[0], 3))
-    textStringForAccelerationValueY = "Y:" + str(round(mpu.acceleration[1], 3))
-    textStringForAccelerationValueZ = "Z:" + str(round(mpu.acceleration[2], 3))
+    toptitle = "Input 3 coordinates in (x,y) format."
+    firstCordsLine = "1st Cords: " + str(...)
+    secondCordsLine = "2nd Cords: " + str(...)
+    thirdCordsLine = "3rd Cords: " + str(...)
 
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
     splash.append(text_area) # have this after line above, need it for it to work.
-    text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueX, color=0xFFFF00, x=5, y=15) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=firstCordsLine, color=0xFFFF00, x=5, y=15) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
-    text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueY, color=0xFFFF00, x=5, y=25) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=secondCordsLine, color=0xFFFF00, x=5, y=25) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
-    text_area = label.Label(terminalio.FONT, text=textStringForAccelerationValueZ, color=0xFFFF00, x=5, y=35) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=thirdCordsLine, color=0xFFFF00, x=5, y=35) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)  
 
     display.show(splash) # send display group to screen, need this.
-
-    if abs(mpu.acceleration[0]) >= 9.35 and abs(mpu.acceleration[0]) <= 10.35 or abs(mpu.acceleration[1]) >= 9.35 and abs(mpu.acceleration[1]) <= 10.35: # this check values, if they are 90 or -90, then a led will turn on.
-        print("Tilted 90 degrees.")
-        redLED.value = True
-    else:
-        redLED.value = False
+    
         
