@@ -36,23 +36,26 @@ redLED = digitalio.DigitalInOut(board.GP16)
 redLED.direction = digitalio.Direction.OUTPUT
 
 
+print("Input 3 cords, (x,y).")
+
+
 while True:
     time.sleep(0.2)
 
     splash = displayio.Group() # create the display group
 
-    toptitle = "Input 3 coordinates in (x,y) format."
+    toptitle = "Input 3 cords, (x,y)."
     firstCordsLine = "1st Cords: " + str(...)
     secondCordsLine = "2nd Cords: " + str(...)
     thirdCordsLine = "3rd Cords: " + str(...)
 
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
     splash.append(text_area) # have this after line above, need it for it to work.
-    text_area = label.Label(terminalio.FONT, text=firstCordsLine, color=0xFFFF00, x=5, y=15) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=firstCordsLine, color=0xFFFF00, x=5, y=20) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
-    text_area = label.Label(terminalio.FONT, text=secondCordsLine, color=0xFFFF00, x=5, y=25) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=secondCordsLine, color=0xFFFF00, x=5, y=30) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
-    text_area = label.Label(terminalio.FONT, text=thirdCordsLine, color=0xFFFF00, x=5, y=35) # the order of this command is (font, text, text color, and location)
+    text_area = label.Label(terminalio.FONT, text=thirdCordsLine, color=0xFFFF00, x=5, y=40) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)  
 
     display.show(splash) # send display group to screen, need this.
