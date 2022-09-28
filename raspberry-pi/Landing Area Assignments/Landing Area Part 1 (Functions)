@@ -25,31 +25,37 @@ GyroMessage = "Gyro: "
 # Pico, ['0x68']. 
 # OLED Screen, ['0x3d'].
 
-# X = mpu.acceleration[0]
-# Y = mpu.acceleration[1]
-# Z = mpu.acceleration[2]
-
 led = digitalio.DigitalInOut(board.LED) # on board LED
 led.direction = digitalio.Direction.OUTPUT
 
 redLED = digitalio.DigitalInOut(board.GP16)
 redLED.direction = digitalio.Direction.OUTPUT
 
+x1 = "?"
+y1 = "?"
+x2 = "?"
+y2 = "?"
+x3 = "?"
+y3 = "?"
 
-def testFunction():
-    print("Input 3 cords, (x,y) format.")
-
-testFunction()
-
+cords1HaveBeenDefined = False
+def userInputCordsFunction1():
+    try:
+        cordsInput1 = int(input("Please enter the 1st cords: "))
+        cords1HaveBeenDefined = True
+        print(cordsInput1)
+    except:
+        print("An exception occurred, use numbers.")
+ 
 while True:
     time.sleep(0.2)
 
     splash = displayio.Group() # create the display group
 
     toptitle = "Input 3 cords, (x,y)."
-    firstCordsLine = "1st Cords: " + "(x1,y1)"
-    secondCordsLine = "2nd Cords: " + "(x2,y2)"
-    thirdCordsLine = "3rd Cords: " + "(x3,y3)"
+    firstCordsLine = "1st Cords: " + "(" + str(x1) + "," + str(y1) + ")"
+    secondCordsLine = "2nd Cords: " + "(" + str(x2) + "," + str(y2) + ")"
+    thirdCordsLine = "3rd Cords: " + "(" + str(x3) + "," + str(y3) + ")"
 
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
     splash.append(text_area) # have this after line above, need it for it to work.
@@ -61,5 +67,13 @@ while True:
     splash.append(text_area)  
 
     display.show(splash) # send display group to screen, need this.
+
+    if (cords1HaveBeenDefined == False):
+        userInputCordsFunction1()
+
+
+
+
+    
     
         
