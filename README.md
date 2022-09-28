@@ -116,14 +116,35 @@ Make sure you do CTRL+S to save code, make sure the battery is charged, and that
 #### Assignment:
 The module must have an onboard screen that prints x, y, and z angular velocity values (rad/s) rounded to 3 decimal places.
 
-VIDEO HERE 
+https://user-images.githubusercontent.com/71342159/191984762-26e465a1-f648-428b-bccb-aa38c250af5b.mp4
 
-IMAGE OF WIRING HERE
+<img src="https://user-images.githubusercontent.com/71342159/191985361-d3964452-20f2-4818-a8ec-db856caf28a9.jpg"  width="300" height="400" />
 
-[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Assignments/Crash%20Avoidance%20Part%202%20Code)
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Crash%20Avoidance%20Assignments/Crash%20Avoidance%20Part%203%20Code)
 
 #### Reflection:
 
+Making things actually appear on the OLED screen and stay there is annoying. Here's what you need for something basic:
+```
+splash = displayio.Group() # create the display group
+toptitle = "Hello World!"
+text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
+splash.append(text_area) # have this after line above, need it for it to work.
+display.show(splash) # send display group to screen, need this.
+```
+Wiring is also sort of a headache. Make sure to have a reset pin, GP pin, and the correct i2c adress things correct. 
+
+Another code tid-bit is absolute value-ing:
+```
+abs(stuff here)
+```
+```
+if abs(mpu.acceleration[0]) >= 9.35 and abs(mpu.acceleration[0]) <= 10.35 or abs(mpu.acceleration[1]) >= 9.35 and abs(mpu.acceleration[1]) <= 10.35: # this check values, if they are 90 or -90, then a led will turn on.
+        print("Tilted 90 degrees.")
+        redLED.value = True
+    else:
+        redLED.value = False
+```
 &nbsp;
 
 
