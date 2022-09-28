@@ -36,8 +36,10 @@ redLED = digitalio.DigitalInOut(board.GP16)
 redLED.direction = digitalio.Direction.OUTPUT
 
 
-print("Input 3 cords, (x,y).")
+def testFunction():
+    print("Input 3 cords, (x,y) format.")
 
+testFunction()
 
 while True:
     time.sleep(0.2)
@@ -45,9 +47,9 @@ while True:
     splash = displayio.Group() # create the display group
 
     toptitle = "Input 3 cords, (x,y)."
-    firstCordsLine = "1st Cords: " + str(...)
-    secondCordsLine = "2nd Cords: " + str(...)
-    thirdCordsLine = "3rd Cords: " + str(...)
+    firstCordsLine = "1st Cords: " + "(x1,y1)"
+    secondCordsLine = "2nd Cords: " + "(x2,y2)"
+    thirdCordsLine = "3rd Cords: " + "(x3,y3)"
 
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
     splash.append(text_area) # have this after line above, need it for it to work.
