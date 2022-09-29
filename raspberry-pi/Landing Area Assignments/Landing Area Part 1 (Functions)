@@ -40,12 +40,21 @@ y3 = "?"
 
 cords1HaveBeenDefined = False
 def userInputCordsFunction1():
+    cordsInput1 = input("Please enter the 1st cords in x,y format: ")
     try:
-        cordsInput1 = int(input("Please enter the 1st cords: "))
-        cords1HaveBeenDefined = True
-        print(cordsInput1)
+        splitToCheckForFormat = cordsInput1.split(",",2)
+        xCord1 = splitToCheckForFormat[0]
+        yCord1 = splitToCheckForFormat[1]
+        try:
+           x1 = int(xCord1)
+           y1 = int(yCord1)
+           print("Done.")
+
+        except:
+            print("Please use numbers.")
+
     except:
-        print("An exception occurred, use numbers.")
+        print("Enter in the correct format.")
  
 while True:
     time.sleep(0.2)
@@ -69,6 +78,7 @@ while True:
     display.show(splash) # send display group to screen, need this.
 
     if (cords1HaveBeenDefined == False):
+        cords1HaveBeenDefined = True
         userInputCordsFunction1()
 
 
