@@ -41,6 +41,9 @@ y3 = "?"
 cords1HaveBeenDefined = False
 def userInputCordsFunction1():
     cordsInput1 = input("Please enter the 1st cords in x,y format: ")
+    global cords1HaveBeenDefined 
+    global x1 
+    global y1 
     try:
         splitToCheckForFormat = cordsInput1.split(",",2)
         xCord1 = splitToCheckForFormat[0]
@@ -49,13 +52,57 @@ def userInputCordsFunction1():
            x1 = int(xCord1)
            y1 = int(yCord1)
            print("Done.")
-
         except:
             print("Please use numbers.")
-
+            cords1HaveBeenDefined = False
     except:
         print("Enter in the correct format.")
+        cords1HaveBeenDefined = False
+
+cords2HaveBeenDefined = False
+def userInputCordsFunction2():
+    cordsInput2 = input("Please enter the 2nd cords in x,y format: ")
+    global cords2HaveBeenDefined 
+    global x2
+    global y2 
+    try:
+        splitToCheckForFormat = cordsInput2.split(",",2)
+        xCord2 = splitToCheckForFormat[0]
+        yCord2 = splitToCheckForFormat[1]
+        try:
+           x2 = int(xCord2)
+           y2 = int(yCord2)
+           print("Done.")
+        except:
+            print("Please use numbers.")
+            cords2HaveBeenDefined = False
+    except:
+        print("Enter in the correct format.")
+        cords2HaveBeenDefined = False
+
+cords3HaveBeenDefined = False
+def userInputCordsFunction3():
+    cordsInput3 = input("Please enter the 3rd cords in x,y format: ")
+    global cords3HaveBeenDefined 
+    global x3
+    global y3 
+    try:
+        splitToCheckForFormat = cordsInput3.split(",",2)
+        xCord3 = splitToCheckForFormat[0]
+        yCord3 = splitToCheckForFormat[1]
+        try:
+           x3 = int(xCord3)
+           y3 = int(yCord3)
+           print("Done.")
+        except:
+            print("Please use numbers.")
+            cords3HaveBeenDefined = False
+    except:
+        print("Enter in the correct format.")
+        cords3HaveBeenDefined = False
  
+ 
+
 while True:
     time.sleep(0.2)
 
@@ -80,6 +127,18 @@ while True:
     if (cords1HaveBeenDefined == False):
         cords1HaveBeenDefined = True
         userInputCordsFunction1()
+    elif (cords1HaveBeenDefined == True):
+        if (cords2HaveBeenDefined == False):
+            cords2HaveBeenDefined = True
+            userInputCordsFunction2()
+        elif (cords2HaveBeenDefined == True):
+            if (cords3HaveBeenDefined == False):
+                cords3HaveBeenDefined = True
+                userInputCordsFunction3()
+            elif (cords3HaveBeenDefined == True):
+                print("All cords have been input, yay.")
+
+
 
 
 
