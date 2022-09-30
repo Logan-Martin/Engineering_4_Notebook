@@ -38,6 +38,11 @@ y2 = "?"
 x3 = "?"
 y3 = "?"
 
+global areaBasedOfCords 
+areaBasedOfCords = "?"
+
+haveAllTheCordBeenDefined = False
+
 cords1HaveBeenDefined = False
 def userInputCordsFunction1():
     cordsInput1 = input("Please enter the 1st cords in x,y format: ")
@@ -49,8 +54,8 @@ def userInputCordsFunction1():
         xCord1 = splitToCheckForFormat[0]
         yCord1 = splitToCheckForFormat[1]
         try:
-           x1 = int(xCord1)
-           y1 = int(yCord1)
+           x1 = float(xCord1)
+           y1 = float(yCord1)
            print("Done.")
         except:
             print("Please use numbers.")
@@ -70,8 +75,8 @@ def userInputCordsFunction2():
         xCord2 = splitToCheckForFormat[0]
         yCord2 = splitToCheckForFormat[1]
         try:
-           x2 = int(xCord2)
-           y2 = int(yCord2)
+           x2 = float(xCord2)
+           y2 = float(yCord2)
            print("Done.")
         except:
             print("Please use numbers.")
@@ -91,8 +96,8 @@ def userInputCordsFunction3():
         xCord3 = splitToCheckForFormat[0]
         yCord3 = splitToCheckForFormat[1]
         try:
-           x3 = int(xCord3)
-           y3 = int(yCord3)
+           x3 = float(xCord3)
+           y3 = float(yCord3)
            print("Done.")
         except:
             print("Please use numbers.")
@@ -113,6 +118,8 @@ while True:
     secondCordsLine = "2nd Cords: " + "(" + str(x2) + "," + str(y2) + ")"
     thirdCordsLine = "3rd Cords: " + "(" + str(x3) + "," + str(y3) + ")"
 
+    areaBasedOfCordsLine = "Area: " + str(areaBasedOfCords) + " sq km"
+
     text_area = label.Label(terminalio.FONT, text=toptitle, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
     splash.append(text_area) # have this after line above, need it for it to work.
     text_area = label.Label(terminalio.FONT, text=firstCordsLine, color=0xFFFF00, x=5, y=20) # the order of this command is (font, text, text color, and location)
@@ -120,7 +127,10 @@ while True:
     text_area = label.Label(terminalio.FONT, text=secondCordsLine, color=0xFFFF00, x=5, y=30) # the order of this command is (font, text, text color, and location)
     splash.append(text_area)    
     text_area = label.Label(terminalio.FONT, text=thirdCordsLine, color=0xFFFF00, x=5, y=40) # the order of this command is (font, text, text color, and location)
-    splash.append(text_area)  
+    splash.append(text_area)
+
+    text_area = label.Label(terminalio.FONT, text=areaBasedOfCordsLine, color=0xFFFF00, x=5, y=55) # the order of this command is (font, text, text color, and location)
+    splash.append(text_area)
 
     display.show(splash) # send display group to screen, need this.
 
@@ -136,7 +146,12 @@ while True:
                 cords3HaveBeenDefined = True
                 userInputCordsFunction3()
             elif (cords3HaveBeenDefined == True):
-                print("All cords have been input, yay.")
+                if (haveAllTheCordBeenDefined == False):
+                    haveAllTheCordBeenDefined = True
+                    print("All cords have been input, yay.")
+                    areaBasedOfCords = x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)
+                    areaBasedOfCords = areaBasedOfCords/2
+                    print("Based on inputs, area is: " + str(areaBasedOfCords) + " sq km")
 
 
 
