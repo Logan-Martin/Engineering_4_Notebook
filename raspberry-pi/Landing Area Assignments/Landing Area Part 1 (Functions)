@@ -106,8 +106,6 @@ def userInputCordsFunction3():
         print("Enter in the correct format.")
         cords3HaveBeenDefined = False
  
- 
-
 while True:
     time.sleep(0.2)
 
@@ -153,11 +151,3 @@ while True:
                     areaBasedOfCords = areaBasedOfCords/2
                     print("Based on inputs, area is: " + str(areaBasedOfCords) + " sq km")
 
-
-
-
-
-
-    
-    
-        
