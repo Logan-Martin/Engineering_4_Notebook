@@ -148,4 +148,22 @@ if abs(mpu.acceleration[0]) >= 9.35 and abs(mpu.acceleration[0]) <= 10.35 or abs
 &nbsp;
 
 
+&nbsp;
+## Landing Area Part 1 (Functions)
+#### Assignment:
+1. The code must ask for the user to input a set of three coordinates in (x,y) format
+2. The triangle area must be determined using a function
+3. If the user inputs coordinates incorrectly (letters or improper format) the code should return to the input stage, it should not throw an error or exit the script
+4. The triangle area must be printed to the screen in this format: “The area of the triangle with vertices (x,y), (x,y), (x,y) is {area} square km.
+5. The code must return to the input stage after printing the area, and wait for user input.
+
+https://user-images.githubusercontent.com/71342159/193598210-23c0de68-14c9-42e4-937f-c109e278e643.mp4
+
+<img src="https://user-images.githubusercontent.com/71342159/193598465-c44b7db8-99d6-4c63-81cd-44c70af1ea80.jpg"  width="300" height="400" />
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Landing%20Area%20Assignments/Landing%20Area%20Part%201%20(Functions))
+
+#### Reflection:
+haha no
+
 
