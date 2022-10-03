@@ -164,6 +164,50 @@ https://user-images.githubusercontent.com/71342159/193598210-23c0de68-14c9-42e4-
 [Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Landing%20Area%20Assignments/Landing%20Area%20Part%201%20(Functions))
 
 #### Reflection:
-haha no
+Everything was pretty strait-forward with the instructrions and everything, it just took a very long time. A few things:
+
+Messing with variables inside a function, most times, requires the variable to be "global":
+```
+cords1HaveBeenDefined = False
+def userInputCordsFunction1():
+    cordsInput1 = input("Please enter the 1st cords in x,y format: ")
+    global cords1HaveBeenDefined 
+    global x1 
+    global y1
+```
+Try execpt code bit:
+```
+# this checks if the variables are a "float"/number, if it's not it will tell you to use numbers as input.
+try:
+ x1 = float(xCord1)
+ y1 = float(yCord1)
+ print("Done.")
+except:
+ print("Please use numbers.")
+ cords1HaveBeenDefined = False
+```
+This is how I prompted/checked things. There's a better way to do this, I'm sure, but his is how I did it. **It's inside a while true loop**.:
+```
+if (cords1HaveBeenDefined == False):
+        cords1HaveBeenDefined = True
+        userInputCordsFunction1()
+    elif (cords1HaveBeenDefined == True):
+        if (cords2HaveBeenDefined == False):
+            cords2HaveBeenDefined = True
+            userInputCordsFunction2()
+        elif (cords2HaveBeenDefined == True):
+            if (cords3HaveBeenDefined == False):
+                cords3HaveBeenDefined = True
+                userInputCordsFunction3()
+            elif (cords3HaveBeenDefined == True):
+                if (haveAllTheCordBeenDefined == False):
+                    haveAllTheCordBeenDefined = True
+                    print("All cords have been input, yay.")
+                    areaBasedOfCords = x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)
+                    areaBasedOfCords = areaBasedOfCords/2
+                    areaBasedOfCords = abs(areaBasedOfCords)
+                    print("Based on inputs, area is: " + str(areaBasedOfCords) + " sq km")
+```
+&nbsp;
 
 
