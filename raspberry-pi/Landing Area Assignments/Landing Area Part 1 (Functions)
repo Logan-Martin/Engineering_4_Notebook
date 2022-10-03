@@ -149,5 +149,6 @@ while True:
                     print("All cords have been input, yay.")
                     areaBasedOfCords = x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2)
                     areaBasedOfCords = areaBasedOfCords/2
+                    areaBasedOfCords = abs(areaBasedOfCords)
                     print("Based on inputs, area is: " + str(areaBasedOfCords) + " sq km")
 
