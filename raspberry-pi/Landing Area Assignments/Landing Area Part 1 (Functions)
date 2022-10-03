@@ -151,4 +151,10 @@ while True:
                     areaBasedOfCords = areaBasedOfCords/2
                     areaBasedOfCords = abs(areaBasedOfCords)
                     print("Based on inputs, area is: " + str(areaBasedOfCords) + " sq km")
+                    time.sleep(0.5)
+                    haveAllTheCordBeenDefined = False
+                    cords1HaveBeenDefined = False
+                    cords2HaveBeenDefined = False
+                    cords3HaveBeenDefined = False
+
 
