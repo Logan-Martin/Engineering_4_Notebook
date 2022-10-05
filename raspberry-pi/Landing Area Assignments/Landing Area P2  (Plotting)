@@ -1,0 +1,141 @@
+import board # type: ignore
+import digitalio  # type: ignore
+import busio  # type: ignore
+import time # type: ignore
+from adafruit_display_text import label # type: ignore
+import adafruit_displayio_ssd1306 # type: ignore
+import terminalio # type: ignore
+import displayio # type: ignore
+
+from adafruit_display_shapes.triangle import Triangle  # type: ignore
+from adafruit_display_shapes.line import Line  # type: ignore
+from adafruit_display_shapes.circle import Circle  # type: ignore
+
+
+displayio.release_displays() #put this line just below your imports
+
+sda_pin = board.GP14
+scl_pin = board.GP15
+i2c = busio.I2C(scl_pin, sda_pin) 
+
+display_bus = displayio.I2CDisplay(i2c, device_address=0x3d, reset=board.GP13)
+display = adafruit_displayio_ssd1306.SSD1306(display_bus, width=128, height=64)
+
+x1 = "?"
+y1 = "?"
+x2 = "?"
+y2 = "?"
+x3 = "?"
+y3 = "?"
+
+global areaBasedOffCords 
+areaBasedOffCords = "?"
+
+haveAllTheCordBeenDefined = False
+
+cords1HaveBeenDefined = False
+def userInputCordsFunction1():
+    cordsInput1 = input("Please enter the 1st cords in x,y format: ")
+    global cords1HaveBeenDefined 
+    global x1 
+    global y1 
+    try:
+        splitToCheckForFormat = cordsInput1.split(",",2)
+        xCord1 = splitToCheckForFormat[0]
+        yCord1 = splitToCheckForFormat[1]
+        try:
+           x1 = int(xCord1)
+           y1 = int(yCord1)
+           print("Done.")
+        except:
+            print("Please use numbers.")
+            cords1HaveBeenDefined = False
+    except:
+        print("Enter in the correct format.")
+        cords1HaveBeenDefined = False
+
+cords2HaveBeenDefined = False
+def userInputCordsFunction2():
+    cordsInput2 = input("Please enter the 2nd cords in x,y format: ")
+    global cords2HaveBeenDefined 
+    global x2
+    global y2 
+    try:
+        splitToCheckForFormat = cordsInput2.split(",",2)
+        xCord2 = splitToCheckForFormat[0]
+        yCord2 = splitToCheckForFormat[1]
+        try:
+           x2 = int(xCord2)
+           y2 = int(yCord2)
+           print("Done.")
+        except:
+            print("Please use numbers.")
+            cords2HaveBeenDefined = False
+    except:
+        print("Enter in the correct format.")
+        cords2HaveBeenDefined = False
+
+cords3HaveBeenDefined = False
+def userInputCordsFunction3():
+    cordsInput3 = input("Please enter the 3rd cords in x,y format: ")
+    global cords3HaveBeenDefined 
+    global x3
+    global y3 
+    try:
+        splitToCheckForFormat = cordsInput3.split(",",2)
+        xCord3 = splitToCheckForFormat[0]
+        yCord3 = splitToCheckForFormat[1]
+        try:
+           x3 = int(xCord3)
+           y3 = int(yCord3)
+           print("Done.")
+        except:
+            print("Please use numbers.")
+            cords3HaveBeenDefined = False
+    except:
+        print("Enter in the correct format.")
+        cords3HaveBeenDefined = False
+
+while True:
+    time.sleep(0.2)
+
+    if (cords1HaveBeenDefined == False):
+        cords1HaveBeenDefined = True
+        userInputCordsFunction1()
+    elif (cords1HaveBeenDefined == True):
+        if (cords2HaveBeenDefined == False):
+            cords2HaveBeenDefined = True
+            userInputCordsFunction2()
+        elif (cords2HaveBeenDefined == True):
+            if (cords3HaveBeenDefined == False):
+                cords3HaveBeenDefined = True
+                userInputCordsFunction3()
+            elif (cords3HaveBeenDefined == True):
+                if (haveAllTheCordBeenDefined == False):
+                    haveAllTheCordBeenDefined = True
+                    print("All cords have been input, yay.")
+                    areaBasedOffCords = abs(((x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))/2))
+                    print("Based on inputs, area is: " + str(areaBasedOffCords) + " sq km")
+
+                    splash = displayio.Group() # create the display group
+                    hlineY = Line(64,0,64,64, color=0xFFFF00) # A line is called using the endpoints of the line, (x1,y1) and (x2,y2)
+                    splash.append(hlineY)
+                    hlineX = Line(0,32,128,32, color=0xFFFF00) # A line is called using the endpoints of the line, (x1,y1) and (x2,y2)
+                    splash.append(hlineX)
+                    circle = Circle(64, 32, 2, outline=0xFFFF00) # A circle is called using the center point (x,y) and the radius (r)
+                    splash.append(circle)
+                    triangle = Triangle(x1 + 64, 32 - y1, x2 + 64, 32 - y2, x3 + 64, 32 - y3, outline=0xFFFF00) # A triangle is called using the three vertices (x1,y1), (x2,y2), and (x3,y3)
+                    splash.append(triangle)
+                    areaMessage = str(areaBasedOffCords) + " km2"
+                    text_area = label.Label(terminalio.FONT, text=areaMessage, color=0xFFFF00, x=5, y=5) # the order of this command is (font, text, text color, and location)
+                    splash.append(text_area) # have this after line above, need it for it to work.
+                    display.show(splash) # send display group to screen, need this.
+                    
+                    time.sleep(0.5)
+                    haveAllTheCordBeenDefined = False
+                    cords1HaveBeenDefined = False
+                    cords2HaveBeenDefined = False
+                    cords3HaveBeenDefined = False
+
+
+
