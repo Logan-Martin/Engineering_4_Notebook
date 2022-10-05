@@ -223,7 +223,7 @@ https://user-images.githubusercontent.com/71342159/194084231-0ea36b07-5e8c-4879-
 [Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Landing%20Area%20Assignments/Landing%20Area%20P2%20%20(Plotting))
 
 #### Reflection:
-To make code actually go to quads, add 64 to the X values of the triangle. For Y, do 32 - y1, 32 - y2, ect. Thaqt took a bit to find out, [this was a helpful source.](https://makeabilitylab.github.io/physcomp/advancedio/oled.html)
+To make code actually go to quads, add 64 to the X values of the triangle. For Y, do 32 - y1, 32 - y2, ect. That took a bit to find out, [this was a helpful source.](https://makeabilitylab.github.io/physcomp/advancedio/oled.html) Pretty much the same code as part 1, but with a bunch of random trail and error.
 
 &nbsp;
 
