@@ -211,3 +211,20 @@ if (cords1HaveBeenDefined == False):
 &nbsp;
 
 
+&nbsp;
+## Landing Area Part 2 (Plotting)
+#### Assignment:
+An onboard OLED screen must plot each triangle on a graph relative to the base location.
+
+https://user-images.githubusercontent.com/71342159/194084231-0ea36b07-5e8c-4879-b488-e89b02677748.mp4
+
+<img src="https://user-images.githubusercontent.com/71342159/194084089-fbfb02fe-9601-47e2-8c71-b6fcc81fe5b1.jpg"  width="300" height="400" />
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Landing%20Area%20Assignments/Landing%20Area%20P2%20%20(Plotting))
+
+#### Reflection:
+To make code actually go to quads, add 64 to the X values of the triangle. For Y, do 32 - y1, 32 - y2, ect. Thaqt took a bit to find out, [this was a helpful source.](https://makeabilitylab.github.io/physcomp/advancedio/oled.html)
+
+&nbsp;
+
+
