@@ -1,0 +1,56 @@
+import board # type: ignore
+import time # type: ignore
+
+codeShouldKeepRunning = True
+inputToExitInput = "-q"
+
+MORSE_CODE = { 'A':'.-', 'B':'-...',
+    'C':'-.-.', 'D':'-..', 'E':'.',
+    'F':'..-.', 'G':'--.', 'H':'....',
+    'I':'..', 'J':'.---', 'K':'-.-',
+    'L':'.-..', 'M':'--', 'N':'-.',
+    'O':'---', 'P':'.--.', 'Q':'--.-',
+    'R':'.-.', 'S':'...', 'T':'-',
+    'U':'..-', 'V':'...-', 'W':'.--',
+    'X':'-..-', 'Y':'-.--', 'Z':'--..',
+    '1':'.----', '2':'..---', '3':'...--',
+    '4':'....-', '5':'.....', '6':'-....',
+    '7':'--...', '8':'---..', '9':'----.',
+    '0':'-----', ', ':'--..--', '.':'.-.-.-',
+    '?':'..--..', '/':'-..-.', '-':'-....-',
+    '(':'-.--.', ')':'-.--.-', ' ':'/'}
+
+
+userHasBeenPromptedAlready = False
+def promptUserForMorseInput():
+    global userHasBeenPromptedAlready
+    global codeShouldKeepRunning
+    userHasBeenPromptedAlready = True
+    promptUserAndThisIsmessage = input("Enter something to be translated to morse code, or enter " + inputToExitInput + " to quit: ")
+    if (promptUserAndThisIsmessage == inputToExitInput):
+        print("!QUIT!")
+        codeShouldKeepRunning = False
+    else:
+        print("User inputed: " + str(promptUserAndThisIsmessage))
+        translateMessage(promptUserAndThisIsmessage)
+        time.sleep(.25)
+
+def translateMessage(promptUserAndThisIsmessage):
+    morseMessageTranslated = ""
+    for i, v in enumerate(promptUserAndThisIsmessage):
+        vNew = str(v).upper()
+        try:
+            morseMessageTranslated = morseMessageTranslated + " " + str(MORSE_CODE[vNew])
+        except:
+            print("Error. Not translatable.")
+    print(morseMessageTranslated)
+
+
+    
+
+while (codeShouldKeepRunning == True):
+    time.sleep(0.2)
+    promptUserForMorseInput()
+
+
+
