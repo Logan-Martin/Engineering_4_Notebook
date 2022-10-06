@@ -20,7 +20,6 @@ MORSE_CODE = { 'A':'.-', 'B':'-...',
     '?':'..--..', '/':'-..-.', '-':'-....-',
     '(':'-.--.', ')':'-.--.-', ' ':'/'}
 
-
 userHasBeenPromptedAlready = False
 def promptUserForMorseInput():
     global userHasBeenPromptedAlready
@@ -44,9 +43,6 @@ def translateMessage(promptUserAndThisIsmessage):
         except:
             print("Error. Not translatable.")
     print(morseMessageTranslated)
-
-
-    
 
 while (codeShouldKeepRunning == True):
     time.sleep(0.2)
