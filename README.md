@@ -236,15 +236,15 @@ To make code actually go to quads, add 64 to the X values of the triangle. For Y
 3.) If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor
 4.) The printed text must use a space to show breaks between letters, and a slash to show breaks between words
 
-VIDEO HERE, not done yet.
+https://user-images.githubusercontent.com/71342159/194573859-db974235-f517-4c4a-b879-2b6c45d17bc6.mp4
 
 No wiring required.
 
 [Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Morse%20Code%20Assignments/Morse%20Code%20P1)
 
 #### Reflection:
-Not done yet.
-
+I've broken up the work into different functions to make it easier, I think, to understand. Dictionary was already given so I didn't exactly need to do much on that end. Prompt User -> check if that message is "-q" -> if it's not, go to the function that translates -> Break up message character by character using "for i, v". -> add all the strings together. Boom.
+ 
 &nbsp;
 
 
