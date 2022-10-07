@@ -231,10 +231,10 @@ To make code actually go to quads, add 64 to the X values of the triangle. For Y
 &nbsp;
 ## Morse Code Part 1 (Translation)
 #### Assignment:
-1.) Your script must accept text input by the user
-2.) If the user types “-q”, your script must exit
-3.) If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor
-4.) The printed text must use a space to show breaks between letters, and a slash to show breaks between words
+1. Your script must accept text input by the user
+2. If the user types “-q”, your script must exit
+3. If the user types anything else, your script must translate the text to morse code dots and dashes, and print those to the monitor
+4. The printed text must use a space to show breaks between letters, and a slash to show breaks between words
 
 https://user-images.githubusercontent.com/71342159/194573859-db974235-f517-4c4a-b879-2b6c45d17bc6.mp4
 
