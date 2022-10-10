@@ -1,0 +1,87 @@
+import board # type: ignore
+import time # type: ignore
+import digitalio  # type: ignore
+
+redLED = digitalio.DigitalInOut(board.LED)
+redLED.direction = digitalio.Direction.OUTPUT
+
+codeShouldKeepRunning = True
+inputToExitInput = "-q"
+
+MORSE_CODE = { 'A':'.-', 'B':'-...',
+    'C':'-.-.', 'D':'-..', 'E':'.',
+    'F':'..-.', 'G':'--.', 'H':'....',
+    'I':'..', 'J':'.---', 'K':'-.-',
+    'L':'.-..', 'M':'--', 'N':'-.',
+    'O':'---', 'P':'.--.', 'Q':'--.-',
+    'R':'.-.', 'S':'...', 'T':'-',
+    'U':'..-', 'V':'...-', 'W':'.--',
+    'X':'-..-', 'Y':'-.--', 'Z':'--..',
+    '1':'.----', '2':'..---', '3':'...--',
+    '4':'....-', '5':'.....', '6':'-....',
+    '7':'--...', '8':'---..', '9':'----.',
+    '0':'-----', ', ':'--..--', '.':'.-.-.-',
+    '?':'..--..', '/':'-..-.', '-':'-....-',
+    '(':'-.--.', ')':'-.--.-', ' ':'/'}
+
+# The Morse code timing rules we will use for signaling are: 
+# a dot (.) lasts for 1/4 second. a dash (-) lasts for 3/4 seconds. 
+# the space between dots and dashes that are part of the same letter is 1/4 second.
+# space between letters is 3/4 seconds
+# space between words is 1+3/4 seconds
+
+modifier = 0.25
+dot_time = 1*modifier
+dash_time = 3*modifier
+between_taps = 1*modifier
+between_letters = 3*modifier
+between_words = 7*modifier
+
+userHasBeenPromptedAlready = False
+def promptUserForMorseInput():
+    global userHasBeenPromptedAlready
+    global codeShouldKeepRunning
+    userHasBeenPromptedAlready = True
+    promptUserAndThisIsmessage = input("Enter something to be translated to morse code, or enter " + inputToExitInput + " to quit: ")
+    if (promptUserAndThisIsmessage == inputToExitInput):
+        print("!QUIT!")
+        codeShouldKeepRunning = False
+    else:
+        print("User inputed: " + str(promptUserAndThisIsmessage))
+        translateMessageToMorse(promptUserAndThisIsmessage)
+        time.sleep(.25)
+
+def translateMessageToMorse(promptUserAndThisIsmessage):
+    morseMessageTranslated = ""
+    for i, v in enumerate(promptUserAndThisIsmessage):
+        vNew = str(v).upper()
+        try:
+            morseMessageTranslated = morseMessageTranslated + " " + str(MORSE_CODE[vNew])
+        except:
+            print("Error. Not translatable.")
+    print(morseMessageTranslated)
+    translateMessageFromMorseToLEDMorse(promptUserAndThisIsmessage)
+
+def translateMessageFromMorseToLEDMorse(promptUserAndThisIsmessage):
+    for i, v in enumerate(promptUserAndThisIsmessage):
+        if (v == "."): # if character is a dot, do a short blink
+            print("TEST.")
+            redLED.value = True 
+            time.sleep(dot_time)
+            redLED.value = False
+        elif (v == "-"):   # if character is a dash, do a long blink
+            redLED.value = True 
+            time.sleep(dash_time)
+            redLED.value = False
+        elif (v == "/"):   # if it's between words, do a “between words” pause
+            redLED.value = True 
+            time.sleep(between_words)
+            redLED.value = False
+        time.sleep(between_letters)
+
+while (codeShouldKeepRunning == True):
+    time.sleep(0.2)
+    promptUserForMorseInput()
+
+
+
