@@ -51,8 +51,9 @@ def promptUserForMorseInput():
         translateMessageToMorse(promptUserAndThisIsmessage)
         time.sleep(.25)
 
+morseMessageTranslated = ""
 def translateMessageToMorse(promptUserAndThisIsmessage):
-    morseMessageTranslated = ""
+    global morseMessageTranslated
     for i, v in enumerate(promptUserAndThisIsmessage):
         vNew = str(v).upper()
         try:
@@ -64,16 +65,18 @@ def translateMessageToMorse(promptUserAndThisIsmessage):
 
 def translateMessageFromMorseToLEDMorse(promptUserAndThisIsmessage):
     for i, v in enumerate(promptUserAndThisIsmessage):
-        if (v == "."): # if character is a dot, do a short blink
+        if (str(v) == "."): # if character is a dot, do a short blink
             print("TEST.")
             redLED.value = True 
             time.sleep(dot_time)
             redLED.value = False
-        elif (v == "-"):   # if character is a dash, do a long blink
+        elif (str(v) == "-"):   # if character is a dash, do a long blink
+            print("TEST2.")
             redLED.value = True 
             time.sleep(dash_time)
             redLED.value = False
-        elif (v == "/"):   # if it's between words, do a “between words” pause
+        elif (str(v) == "/"):   # if it's between words, do a “between words” pause
+            print("TEST3.")
             redLED.value = True 
             time.sleep(between_words)
             redLED.value = False
