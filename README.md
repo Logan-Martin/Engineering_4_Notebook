@@ -248,3 +248,19 @@ I've broken up the work into different functions to make it easier, I think, to 
 &nbsp;
 
 
+&nbsp;
+## Morse Code Part 2 (Transmission)
+#### Assignment:
+The script must flash an LED to transmit the morse code message using the timing sequence shown below
+
+VIDEO HERE
+
+IMAGE OF WIRING HERE
+
+[Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Morse%20Code%20Assignments/Morse%20Code%20P2)
+
+#### Reflection:
+REFLECTION HERE.
+ 
+&nbsp;
+
