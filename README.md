@@ -253,14 +253,47 @@ I've broken up the work into different functions to make it easier, I think, to 
 #### Assignment:
 The script must flash an LED to transmit the morse code message using the timing sequence shown below
 
-VIDEO HERE
+https://user-images.githubusercontent.com/71342159/194888392-91a1e435-e6bf-426b-822e-d2cf7c59db08.mp4
 
-IMAGE OF WIRING HERE
+<img src="https://user-images.githubusercontent.com/71342159/194888249-381f0385-bd4b-4ab5-9dda-4f64c468bc41.jpg" width="300" height="400" />
 
 [Link to Code.](https://github.com/Logan-Martin/Engineering_4_Notebook/blob/main/raspberry-pi/Morse%20Code%20Assignments/Morse%20Code%20P2)
 
 #### Reflection:
-REFLECTION HERE.
+This is really only the new code here:
+```
+# The Morse code timing rules we will use for signaling are: 
+# a dot (.) lasts for 1/4 second. a dash (-) lasts for 3/4 seconds. 
+# the space between dots and dashes that are part of the same letter is 1/4 second.
+# space between letters is 3/4 seconds
+# space between words is 1+3/4 seconds
+
+modifier = 0.25
+dot_time = 1*modifier
+dash_time = 3*modifier
+between_taps = 1*modifier
+between_letters = 3*modifier
+between_words = 7*modifier
+
+
+def translateMessageFromMorseToLEDMorse(morseMessageTranslated):
+    for i, v in enumerate(morseMessageTranslated):
+        ## print(str(v))
+        if (str(v) == "."): # if character is a dot, do a short blink
+            redLED.value = True 
+            time.sleep(dot_time)
+            redLED.value = False
+        elif (str(v) == "-"):   # if character is a dash, do a long blink
+            redLED.value = True 
+            time.sleep(dash_time)
+            redLED.value = False
+        elif (str(v) == "/"):   # if it's between words, do a “between words” pause
+            redLED.value = True 
+            time.sleep(between_words)
+            redLED.value = False
+        time.sleep(between_letters)
+```
+Make sure to pass the corrent thing in the function, I didn't do that the first time. Test this by "Print(whatever)". That isn't all the code btw, all of it is linked above. Anyways, the timing was given to me and it was basically the same thing as the previous assignment. I did kind of have an issue with the LED, make sure the one you have is wired correctly and just, ya know, works in the first place.
  
 &nbsp;
 
