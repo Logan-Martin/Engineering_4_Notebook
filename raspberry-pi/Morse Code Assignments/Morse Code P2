@@ -2,7 +2,7 @@ import board # type: ignore
 import time # type: ignore
 import digitalio  # type: ignore
 
-redLED = digitalio.DigitalInOut(board.LED)
+redLED = digitalio.DigitalInOut(board.GP17)
 redLED.direction = digitalio.Direction.OUTPUT
 
 codeShouldKeepRunning = True
@@ -61,29 +61,27 @@ def translateMessageToMorse(promptUserAndThisIsmessage):
         except:
             print("Error. Not translatable.")
     print(morseMessageTranslated)
-    translateMessageFromMorseToLEDMorse(promptUserAndThisIsmessage)
+    translateMessageFromMorseToLEDMorse(morseMessageTranslated)
 
-def translateMessageFromMorseToLEDMorse(promptUserAndThisIsmessage):
-    for i, v in enumerate(promptUserAndThisIsmessage):
+def translateMessageFromMorseToLEDMorse(morseMessageTranslated):
+    for i, v in enumerate(morseMessageTranslated):
+        ## print(str(v))
         if (str(v) == "."): # if character is a dot, do a short blink
-            print("TEST.")
             redLED.value = True 
             time.sleep(dot_time)
             redLED.value = False
         elif (str(v) == "-"):   # if character is a dash, do a long blink
-            print("TEST2.")
             redLED.value = True 
             time.sleep(dash_time)
             redLED.value = False
         elif (str(v) == "/"):   # if it's between words, do a “between words” pause
-            print("TEST3.")
             redLED.value = True 
             time.sleep(between_words)
             redLED.value = False
         time.sleep(between_letters)
 
 while (codeShouldKeepRunning == True):
-    time.sleep(0.2)
+    time.sleep(0.1)
     promptUserForMorseInput()
 
 
