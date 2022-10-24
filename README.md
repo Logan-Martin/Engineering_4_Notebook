@@ -298,6 +298,7 @@ Make sure to pass the corrent thing in the function, I didn't do that the first 
 &nbsp;
 ## 4.1 - Ring and Spinner
 Make the parts w/ the intructions. 
+
 ![4 1 Ring IMage](https://user-images.githubusercontent.com/71342159/197551467-f48d6c0f-124e-4392-94a5-5c7725af9148.png)
 ![4 1 Spinner image](https://user-images.githubusercontent.com/71342159/197551795-0c7faad2-d069-4fb7-93ab-d4a609f7748c.png)
 
