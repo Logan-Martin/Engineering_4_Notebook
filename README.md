@@ -296,4 +296,13 @@ def translateMessageFromMorseToLEDMorse(morseMessageTranslated):
 Make sure to pass the corrent thing in the function, I didn't do that the first time. Test this by "Print(whatever)". That isn't all the code btw, all of it is linked above. Anyways, the timing was given to me and it was basically the same thing as the previous assignment. I did kind of have an issue with the LED, make sure the one you have is wired correctly and just, ya know, works in the first place.
  
 &nbsp;
+## 4.1 - Ring and Spinner
+Make the parts w/ the intructions. 
+![4 1 Ring IMage](https://user-images.githubusercontent.com/71342159/197551467-f48d6c0f-124e-4392-94a5-5c7725af9148.png)
+![4 1 Spinner image](https://user-images.githubusercontent.com/71342159/197551795-0c7faad2-d069-4fb7-93ab-d4a609f7748c.png)
 
+[Link to OnShape Document.)(https://cvilleschools.onshape.com/documents/fa6455741acdfdb9983e8f2f/w/5621f76c42eaad01b5456273/e/8fcd3372e3d5835d814da8f3?renderMode=0&uiState=6356a23ba7098a6a8486315d)
+
+#### Reflection:
+I am doing both the Spinner and the Ring which makes doing things take longer, but will be helpful in the end. I'm not that great at CAD, but I kinda have to be to get everything done. :) Anyways, the first time I did the Spinner, I got the dimentions wrong cause I used the "Use" tool on the wong thing. So, I guess, make sure you are clicking what you want when using that. 
+&nbsp;
