@@ -312,6 +312,7 @@ I am doing both the Spinner and the Ring which makes doing things take longer, b
 &nbsp;
 ## 4.2 - Key and Prop
 Make the parts w/ the intructions. 
+
 ![image](https://user-images.githubusercontent.com/71342159/198043567-49f6000c-3f41-4147-a9ca-f7f740c18949.png)
 ![image](https://user-images.githubusercontent.com/71342159/198043780-b082c4ed-2634-45ed-a7bd-935afc7b8dd7.png)
 
