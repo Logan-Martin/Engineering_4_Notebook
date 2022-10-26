@@ -307,3 +307,16 @@ Make the parts w/ the intructions.
 #### Reflection:
 I am doing both the Spinner and the Ring which makes doing things take longer, but will be helpful in the end. I'm not that great at CAD, but I kinda have to be to get everything done. :) Anyways, the first time I did the Spinner, I got the dimentions wrong cause I used the "Use" tool on the wong thing. So, I guess, make sure you are clicking what you want when using that. 
 &nbsp;
+
+
+&nbsp;
+## 4.2 - Key and Prop
+Make the parts w/ the intructions. 
+![image](https://user-images.githubusercontent.com/71342159/198043567-49f6000c-3f41-4147-a9ca-f7f740c18949.png)
+![image](https://user-images.githubusercontent.com/71342159/198043780-b082c4ed-2634-45ed-a7bd-935afc7b8dd7.png)
+
+[Link to OnShape Document.)(https://cvilleschools.onshape.com/documents/fa6455741acdfdb9983e8f2f/w/5621f76c42eaad01b5456273/e/8fcd3372e3d5835d814da8f3?renderMode=0&uiState=6356a23ba7098a6a8486315d)
+
+#### Reflection:
+The key was a lot easier. I hadn't used patterns as extensively before, so now I know how to user them properly, or well, moreso than before. I don't fully understand everything, the curves in particular is not something I've used a bunch. (one or twice) Also, my mass is off and I don't understand why. I remodeled the prop, but yeah I don't know.
+&nbsp;
