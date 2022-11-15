@@ -308,7 +308,6 @@ Make the parts w/ the intructions.
 I am doing both the Spinner and the Ring which makes doing things take longer, but will be helpful in the end. I'm not that great at CAD, but I kinda have to be to get everything done. :) Anyways, the first time I did the Spinner, I got the dimentions wrong cause I used the "Use" tool on the wong thing. So, I guess, make sure you are clicking what you want when using that. 
 &nbsp;
 
-
 &nbsp;
 ## 4.2 - Key and Prop
 Make the parts w/ the intructions. 
@@ -320,4 +319,17 @@ Make the parts w/ the intructions.
 
 #### Reflection:
 The key was a lot easier. I hadn't used patterns as extensively before, so now I know how to user them properly, or well, moreso than before. I don't fully understand everything, the curves in particular is not something I've used a bunch. (one or twice) Also, my mass is off and I don't understand why. I remodeled the prop, but yeah I don't know.
+&nbsp;
+
+&nbsp;
+## 4.3 - Assembling the Launcher
+
+![Screenshot 2022-11-15 101224](https://user-images.githubusercontent.com/71342159/201955129-26899c0d-7e79-4a4e-8386-d0c21cef19c5.png)
+
+[Link to OnShape Document.)(https://cvilleschools.onshape.com/documents/fa6455741acdfdb9983e8f2f/w/5621f76c42eaad01b5456273/e/f9466776b1c150a2a8350faa?renderMode=1&uiState=6373aca03687493cd86b5d10)
+
+#### Reflection:
+
+Did this by myself, so I didn't really learn anything teamwork related, but assembly is pretty strait-forward. Make sure if things need to negative that they are and vice-versa. I couldn'y the animate thing, but then I watched the gif video thing and yeah. Now I know where it is. :)
+
 &nbsp;
