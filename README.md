@@ -4,13 +4,15 @@ Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.c
 
 
 &nbsp;
-## Random Stuff:
+## Random Test Stuff:
+
 ### Test Link
  [Link to raspberry-pi temp](raspberry-pi)
 ### Test Image
 ![Spicy Sticker](images/spicyStickerImage.jpg)  
 ### Test GIF
 ![Bread Fall Gif](images/falling-bread-bread.gif)
+
 &nbsp;
 
 
