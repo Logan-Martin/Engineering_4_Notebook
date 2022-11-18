@@ -5,9 +5,8 @@ Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.c
 
 &nbsp;
 ## Random Test Stuff:
-
 <details>
-<summary><h3>Click for test stuff</h3></summary>
+<summary>Click for test stuff</summary>
 
  ### Test Link
  [Link to raspberry-pi temp](raspberry-pi)
@@ -18,9 +17,7 @@ Click on ![Screenshot 2022-09-21 100813](https://user-images.githubusercontent.c
  ### Test GIF
  ![Bread Fall Gif](images/falling-bread-bread.gif)
 </details>
-
 &nbsp;
-
 
 &nbsp;
 ## Launch Pad Part 1 (Countdown)
