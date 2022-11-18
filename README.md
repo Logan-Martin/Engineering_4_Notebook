@@ -335,3 +335,16 @@ The key was a lot easier. I hadn't used patterns as extensively before, so now I
 Did this by myself, so I didn't really learn anything teamwork related, but assembly is pretty strait-forward. Make sure if things need to negative that they are and vice-versa. I couldn'y the animate thing, but then I watched the gif video thing and yeah. Now I know where it is. :)
 
 &nbsp;
+
+&nbsp;
+## CFD Introduction
+
+image or video go here
+
+You cannot make a "share link" for simscale, you can however add people individually by email or username. Email me, lmartin27@charlottesvilleschools.org, if you want me to personally add you.
+
+#### Reflection:
+
+There was a ton of reading, or well, as of writing this I'm not finished with the tutorial so there's more to read. The tutorial seems outdated and the tutorial doesn't match for the "Simulations Runs" section inside the document itself. Simulations take half an hour or more so waiting is a thing.
+
+&nbsp;
