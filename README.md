@@ -342,12 +342,12 @@ Did this by myself, so I didn't really learn anything teamwork related, but asse
 &nbsp;
 ## CFD Introduction
 
-image or video go here
+https://user-images.githubusercontent.com/71342159/203356147-28a5a490-0134-4f02-9237-8061094cb792.mp4
 
-You cannot make a "share link" for simscale, you can however add people individually by email or username. Email me, lmartin27@charlottesvilleschools.org, if you want me to personally add you.
+You cannot make a "share link" for simscale, you can however add people individually by email or username.
 
 #### Reflection:
 
-There was a ton of reading, or well, as of writing this I'm not finished with the tutorial so there's more to read. The tutorial seems outdated and the tutorial doesn't match for the "Simulations Runs" section inside the document itself. Simulations take half an hour or more so waiting is a thing.
+There was a ton of reading, or well, as of writing this I'm not finished with the tutorial so there's more to read. The tutorial seems outdated and the tutorial doesn't match for the "Simulations Runs" section inside the document itself. Simulations take half an hour or more so waiting is a thing. Additonally, my simulation didn't seem to work. I had to use the document provided at the bottom of the tutorial.
 
 &nbsp;
